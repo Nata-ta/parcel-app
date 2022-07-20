@@ -2,15 +2,15 @@ import './request-list.scss';
 
 import RequestListItem from '../request-list-item';
 
-const RequestList = ({requests, onDelete}) => {
+const RequestList = ({ requests, onDelete }) => {
 
     const elements = requests.map((item) => {
-        const {id, ...itemProps} = item;
+        const { id, ...itemProps } = item;
         return (
             <li key={id} className="list-group-item">
-                <RequestListItem 
-                {...itemProps}
-                onDelete={() => onDelete(id)}/>
+                <RequestListItem
+                    {...itemProps}
+                    onDelete={() => onDelete(id)} />
             </li>
         )
     })

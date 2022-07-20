@@ -1,13 +1,13 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 import './edit-delete-action.scss';
 
 export default class Modal extends Component {
     onClose = e => {
         this.props.onClose && this.props.onClose(e);
-      };
+    };
     render() {
-        if(!this.props.show){
+        if (!this.props.show) {
             return null;
         }
         return (
@@ -22,4 +22,4 @@ export default class Modal extends Component {
             </div>
         )
     }
-  }
+}
